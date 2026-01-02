@@ -5,11 +5,11 @@
 
 const getApiBaseUrl = (): string => {
   // Check if we're in development
-  const isDev = window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1');
+  // const isDev = window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1');
   
-  if (!isDev) {
-    return 'http://localhost:8000/api/v_1/external/projects';
-  }
+  // if (!isDev) {
+  //   return 'http://localhost:8000/api/v_1/external/projects';
+  // }
   
   // Production URL - adjust based on your deployment
   return 'https://backend.proximahq.io/api/v_1/external/projects';
