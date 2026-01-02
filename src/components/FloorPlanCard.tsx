@@ -14,7 +14,6 @@ export const FloorPlanCard = ({
   projectName,
   isFavorite = false,
   onToggleFavorite,
-  onClick,
 }: FloorPlanCardProps) => {
   const [imageError, setImageError] = useState(false);
 
@@ -94,16 +93,6 @@ export const FloorPlanCard = ({
     onToggleFavorite?.();
   };
 
-  const handleCardClick = (e: React.MouseEvent) => {
-    // Don't trigger card click if clicking on action buttons
-    if (
-      (e.target as HTMLElement).closest("button") ||
-      (e.target as HTMLElement).closest("a")
-    ) {
-      return;
-    }
-    onClick?.();
-  };
 
   // Format size with sqft
   const formatSize = (size: string | null | undefined): string => {

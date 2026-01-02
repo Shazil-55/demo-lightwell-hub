@@ -15,7 +15,6 @@ export const FloorPlanComparisonModal = ({
   isOpen,
   onClose,
   favoritedFloorPlans,
-  config,
   getProjectName,
 }: FloorPlanComparisonModalProps) => {
   const [leftFloorPlan, setLeftFloorPlan] = useState<FloorPlanResponse | null>(null);

@@ -3,7 +3,7 @@
  */
 import { useQuery, UseQueryResult } from '@tanstack/react-query';
 import { getAllFloorPlans } from '../services/api';
-import { GetAllFloorPlansRequest, GetAllFloorPlansResponse } from '../types/api';
+import { GetAllFloorPlansResponse } from '../types/api';
 
 export const useFloorPlans = (
   projectSlugs: string[],
